@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Product Slider</title>
+ <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.11/dist/flickity.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    html,body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+img{
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    border-radius: 5px;
+}
+h3{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.carousel-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    overflow: hidden;
+}
+.carousel-wrapper .carousel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+}
+.carousel-wrapper .carousel .carousel-cell{
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+    width: 14%;
+    height: auto;
+    min-width: 120px;
+    margin: 0 40px;
+    transition: transform 500ms ease;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.479);
+}
+.carousel-wrapper .carousel .carousel-cell .more{
+    display: block;
+    opacity: 0;
+    margin: 5px 0 15px 0;
+    text-align: center;
+    font-size: 10px;
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: opacity 300ms ease;
+}
+.carousel-wrapper .carousel .carousel-cell .more:hover,
+.carousel-wrapper .carousel .carousel-cell .more:active,
+.carousel-wrapper .carousel .carousel-cell .more:visited,
+.carousel-wrapper .carousel .carousel-cell .more:focus{
+    color: #cfcfcf;
+    text-decoration: none;
+}
+.carousel-wrapper .carousel .carousel-cell .line{
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background-color: rgb(0,0,0);
+    left: 50%;
+    margin: 5px 0 0 -1px;
+    transition: height 300ms ease;
+    display: block;
+}
+.carousel-wrapper .carousel .carousel-cell .price{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    font-weight: 700;
+    margin: 45px auto 0 auto;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity 300ms ease 300ms;
+}
+.carousel-wrapper .carousel .carousel-cell .price sup{
+    top: 2px;
+    position: absolute;
+}
+.carousel-wrapper .carousel .carousel-cell.is-selected{
+    transform: scale(1.2);
+}
+.carousel-wrapper .carousel .carousel-cell.is-selected .line{
+    height: 35px;
+}
+.carousel-wrapper .carousel .carousel-cell.is-selected .price,
+.carousel-wrapper .carousel .carousel-cell.is-selected .more{
+    opacity: 1;
+}
+.carousel-wrapper .flickity-page-dots{
+    display: none;
+}
+.carousel-wrapper .flickity-viewport,
+.carousel-wrapper .flickity-slider{
+    overflow: visible;
+}
+@media only screen and (max-width:760px){
+    .carousel-wrapper .carousel .carousel-cell{
+        width: 150px;
+        height: auto;
+        padding: 5px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }}
+</style>
+<body>
+  <div class="carousel-wrapper">
+    <div class="carousel" data-flickity>
+      <div class="carousel-cell">
+        <h3>Casual Dress</h3>
+        <a class="more" href="#">Explore More</a>
+        <img src="3.jpg">
+        <div class="line"></div>
+        <div class="price">
+          <span>225<sup>$</sup></span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <h3>Hoodie</h3>
+        <a class="more" href="#">Explore More</a>
+        <img src="2.jpg">
+        <div class="line"></div>
+        <div class="price">
+          <span>200<sup>$</sup></span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <h3>T-shirt</h3>
+        <a class="more" href="#">Explore More</a>
+        <img src="1.jpg">
+        <div class="line"></div>
+        <div class="price">
+          <span>199<sup>$</sup></span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <h3>Casual Dress 2</h3>
+        <a class="more" href="#">Explore More</a>
+        <img src="4.jpg">
+        <div class="line"></div>
+        <div class="price">
+          <span>49<sup>$</sup></span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <h3>Casual Dress 3</h3>
+        <a class="more" href="#">Explore More</a>
+        <img src="5.jpg">
+        <div class="line"></div>
+        <div class="price">90</span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <h3>Casual Dress 4</h3>
+        <a class="more" href="#">Explore More</a>
+        <img src="6.jpg">
+        <div class="line"></div>
+        <div class="price">
+          <span>70<sup>$</sup></span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <h3>Casual Dress 6</h3>
+        <a class="more" href="#">Explore More</a>
+        <img src="7.jpg">
+        <div class="line"></div>
+        <div class="price">
+          <span><sup>$</sup>325</span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <h3>Glasses</h3>
+        <a class="more" href="#">Explore More</a>
+        <img src="8.jpg">
+        <div class="line"></div>
+        <div class="price">
+          <span><sup>$</sup>125</span>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <h3>Gym Suit</h3>
+        <a class="more" href="#">Explore More</a>
+        <img src="9.jpg">
+        <div class="line"></div>
+        <div class="price">
+          <span><sup>$</sup>300</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/flickity@2.0.11/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

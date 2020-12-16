@@ -721,7 +721,20 @@ body {
   width: 50%;
   float: right;
 }
-
+.people{
+  position: absolute; 
+  margin-left: 110px; 
+  color: rgb(175, 174, 174);
+}
+#onlinenews{
+  float: right; 
+  margin-right: 20px; 
+  color: skyblue;
+}
+.onlinenews{
+    text-decoration: none; 
+    color: skyblue;
+}
 .grid10{
   display: grid;
   grid-template-columns: 35% 20% 20% 25%; 
@@ -852,7 +865,7 @@ body {
   width: 100%;
 }
 
-ul li{
+ul li .about , .one , .two , .three , .four{
   color: rgb(160, 156, 156);
   list-style-type: none;
   padding: 8px 0px;

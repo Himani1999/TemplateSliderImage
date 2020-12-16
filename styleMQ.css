@@ -92,7 +92,7 @@
     .grid1{
         display: grid;
         grid-template-columns: auto;
-        grid-gap: 25px;
+        grid-gap: 40px;
         /* height: 30px; */
     }
     
@@ -124,7 +124,10 @@
     margin-top: 0px;
     margin-left: 0px;
     font-size: 20px;
+    margin-left: 50px;     
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 #firsticon{
     color: skyblue;
@@ -132,7 +135,7 @@
     margin-top: 0px;
     text-align: center;
     margin-left: 0px;
-    margin-right: 50px;
+    margin-right: 0px;
 }
 .secondicon{display: table; /* keep the background color wrapped tight */
     /*  margin: 0px auto 0px auto;  keep the table centered */
@@ -145,7 +148,7 @@
     border-radius: 20px;
     margin-top: 10px;
     padding:5px 15px;
-    margin-left: 130px;
+    margin-left: 100px;
 }
 
 .secondicon1{
@@ -200,11 +203,9 @@
     display: grid;
     grid-template-columns: auto;
     padding-top: 0px;
-    grid-gap: 40px;
-    width: 85%;
+    grid-gap: 30px;
     padding-left: 0px;
     padding-right: 0px;
-    margin: auto;
     /* height: 30px; */
 }
 #real3{
@@ -221,7 +222,7 @@
     padding-top: 0px;
    /* border: none; */
     border-radius: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .grid4{
     display: grid;
@@ -232,14 +233,14 @@
     margin: auto;
     padding-left: 0px;
     padding-right: 0px;
-    height: 380px;
+    height: 950px;
     /* height: 30px; */
 }
 .trending{
     color: skyblue;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 550px;
+    margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 20px;
 }
@@ -321,7 +322,7 @@ display: none;
     text-align: center;
 }
 #profile{
-    height: 130px;
+    height: 150px;
     width: 130px;
      border-radius: 50%;
 }
@@ -342,6 +343,25 @@ display: none;
     text-align: center;
     font-weight: bold;
 }
+.grid9-1{
+  float: none;
+  width: 100%;
+}
+.grid9-2{
+  width: 100%;
+  float: none;
+}
+.people{
+  position: absolute; 
+  margin-left: 85px;
+  color: rgb(175, 174, 174);
+}
+#onlinenews{
+  float: right; 
+  margin-right: -20px; 
+  color: skyblue;
+}
+
 .news{
     font-size: 17px;
     text-align: center;

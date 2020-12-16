@@ -17,21 +17,21 @@
     <div class="maincontainer" id="image" class="background">
 
       <div class="container" id="container">
-          <div class="nav" id="nav">
-              <div style="float: left; font-size:25px; font-weight: bold; margin-top: 22px; margin-left: 20px;">
-                  CLASSY<span style="color:red">ADS</span></div>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                      <i class="fa fa-bars"></i>
-                  </a>
-              <button id="button">+ Post an Ad</button>
-              <a href="">Register</a>
-              <a href="">Login</a>
-              <a href="">Contact</a>
-              <a href="">blog</a>
-              <a href="">About <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
-              <a href="">Ads</a>
-              <a href="">Home</a>
-          </div>
+          <div class="topnav" id="myTopnav">
+
+            <div class="classyads">CLASSY<span style="color:skyblue">ADS</span></div>
+            <a href="#home" class="active">Home</a>
+            <a href="#ads">Ads</a>
+            <a href="#about">About <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#login">Login</a>
+            <a href="#register">Register</a>
+            <button id="button">+ Post an Ad</button>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>  
           <div class="text1">
               Largest Classifieds In The World
           </div>
@@ -50,32 +50,32 @@
                   <div class="first">
                       <div id="firsticon"><i class="fa fa-home" aria-hidden="true"></i></div>
                       <div class="firsticon" id="icon1">RealEstate</div>
-                      <div class="secondicon" id="number">3,921</div>
+                      <div id="secondicon" id="number">3,921</div>
                   </div>
                   <div class="first">
                       <div id="firsticon"><i class="fa fa-book" aria-hidden="true"></i></div>
                       <div class="firsticon" id="icon2">Books&Magazines</div>
-                      <div class="secondicon">398</div>
+                      <div id="secondicon">398</div>
                   </div>
                   <div class="first">
                       <div id="firsticon"><i class="fa fa-book" aria-hidden="true"></i></div>
                       <div class="firsticon" id="icon3">Furniture</div>
-                      <div class="secondicon">1,229</div>
+                      <div id="secondicon">1,229</div>
                   </div>
                   <div class="first">
                       <div id="firsticon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
                       <div class="firsticon" id="icon4">Electronics</div>
-                      <div class="secondicon">32,891</div>
+                      <div id="secondicon">32,891</div>
                   </div>
                   <div class="first">
                       <div id="firsticon"><i class="fa fa-car" aria-hidden="true"></i></div>
                       <div class="firsticon" id="icon5">Cars&Vehicles</div>
-                      <div class="secondicon">29,221</div>
+                      <div id="secondicon">29,221</div>
                   </div>
                   <div class="first">
                       <div id="firsticon"><i class="fa fa-cutlery" aria-hidden="true"></i></div>
                       <div class="firsticon" id="icon6">Other</div>
-                      <div class="secondicon">219</div>
+                      <div id="secondicon">219</div>
                   </div>
               </div>
           </div>
@@ -116,19 +116,19 @@
                       <p class="secondicon" id="real">Cars & Vehicles</p>
                       <p id="real1">Red Luxuary Car</p>
                       <p id="real2">West Orange, New York</p>
-                      <p id="real3"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                      <span class="newicon" id="real3"><i class="fa fa-heart" ></i></span>
                   </div>
                   <div class="card1"><img src="house.jpg" alt="" style="width:100%; height:270px; opacity: 0.7;">
                       <p class="secondicon" id="real">Real Estate</p>
                       <p id="real1" style="bottom: 40px;">HouseWithSwimmingPool</p>
                       <p id="real2">West Orange, New York</p>
-                      <p id="real3"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                      <span class="newicon" id="real3"><i class="fa fa-heart" ></i></span>
                   </div>
                   <div class="card1"><img src="furniture.jpg" alt="" style="width:100%; height: 270px; opacity: 0.7;">
                       <p class="secondicon" id="real">Furniture</p>
                       <p id="real1">Wooden Chair & Table</p>
                       <p id="real2">West Orange, New York</p>
-                      <p id="real3"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                      <span class="newicon" id="real3"><i class="fa fa-heart" ></i></span>
                   </div>
               </div>
           </div>
@@ -138,19 +138,19 @@
                       <p class="secondicon" id="real">Electronics</p>
                       <p id="real1" style="color: black;">iPhone X gray</p>
                       <p id="real2" style="color: black;">West Orange, New York</p>
-                      <p id="real4"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                      <span class="newicon" id="real4"><i class="fa fa-heart" ></i></span>
                   </div>
                   <div class="card2"><img src="house2.jpg" alt="" style="width:100%; height: 450px; opacity: 0.7;">
                       <p class="secondicon" id="real">Real Estate</p>
                       <p id="real1">House With Swimming Pool</p>
                       <p id="real2">West Orange, New York</p>
-                      <p id="real4"><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+                      <span class="newicon" id="real4"><i class="fa fa-heart" ></i></span>
                   </div>
               </div>
           </div>
       </div>
   </div>
-  <div class="maincontainer">
+  <div class="maincontainer" style="background-color: white;">
       <div class="container">
           <div class="trending"><span style="text-decoration: underline; ">Trend</span>ing Today</div>
           <div class="transparent5">
@@ -215,6 +215,7 @@
 
 
 <!--slider part-->  
+<div class="maincontainer" style="background-color: rgb(241, 239, 239);">
 <div class="container">  
     <div class="wrapper">
       <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
@@ -266,10 +267,10 @@
 
     <div class="navigation-dots"></div>
   </div>
-
+</div>
 
   <!--last part-->
-  <div class="maincontainer" style="background-color: rgb(241, 239, 239);">
+  <div class="maincontainer" style="background-color: white">
     <div class="container">
         <div class="blog">Our Blog</div>
         <div class="news">See Our Daily News & Updates</div>
@@ -350,19 +351,19 @@
             </div>
         </div>
         <hr size="1" id="hr">
-        <div class="copyright">Copyright ©2020 All rights reserved | This template is made with by <span style="color: rgb(196, 190, 190); font-size: 20px;">Colorlib</span></div>
+        <div id="copyright">Copyright ©2020 All rights reserved | This template is made with by <span style="color: rgb(196, 190, 190); font-size: 20px;">Colorlib</span></div>
     </div>
     
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-    }
-</script>
+    </script>
 </div>
 
     <script src="main.js"></script>

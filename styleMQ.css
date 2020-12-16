@@ -77,7 +77,7 @@
         height: 30px;
     }
     .transparent1{
-        height: 900px;
+        height: 870px;
         width: 90%;
         margin: auto;
         /* border: 1px solid black; */
@@ -88,7 +88,7 @@
     .grid1{
         display: grid;
         grid-template-columns: auto;
-        grid-gap: 50px;
+        grid-gap: 25px;
         /* height: 30px; */
     }
     
@@ -120,6 +120,7 @@
     margin-top: 0px;
     margin-left: 0px;
     font-size: 20px;
+    text-align: center;
 }
 #firsticon{
     color: skyblue;
@@ -134,24 +135,39 @@
     border-radius: 20px;
     margin-top: 10px;
     padding:5px 15px;
-    margin-left: 120px;
 }
+#secondicon{display: table; /* keep the background color wrapped tight */
+    /*  margin: 0px auto 0px auto;  keep the table centered */
+    border-radius: 20px;
+    margin-top: 10px;
+    padding:5px 15px;
+    margin-left: 130px;
+}
+
+.secondicon1{
+  margin-left: 0px;
+}
+
 
 .text3{
     margin: 150px 0px 20px 0px ;
     font-size: 30px;
 }
-
+.transparent2{
+  background-color: white;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+ /* border: none; */
+  border-radius: 10px;
+}
 .grid2{
-    display: grid;
-    grid-template-columns: auto;
-    padding-top: 0px;
-    grid-gap: 20px;
-    /* border: 1px solid red; */
-    width: 85%;
-    margin: auto;
-    /* height: 30px; */
-
+  display: grid;
+  grid-template-columns: auto;
+  padding-top: 0px;
+  grid-gap: 40px;
+  /* border: 1px solid red; */
+  width: 100%;
+  /* height: 30px; */
 }
 .card{
     border: none;
@@ -166,7 +182,7 @@
 .popular{
     color: skyblue;
     margin-top: 850px;
-    padding-top: 1550px;
+    padding-top: 1650px;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -189,16 +205,13 @@
     /* height: 30px; */
 }
 #real3{
-    margin-left: 300px;
-    /* fill: black; */
-    /* background-color: skyblue; */
+  margin-left: -60px;
 }
 
 #real4{
-    margin-left: 300px;
-    /* fill: black; */
-    /* background-color: skyblue; */
+  margin-left: -60px;
 }
+
 
 .transparent4{
     margin-top: 20px;
@@ -420,10 +433,12 @@ body {
   .wrapper {
     width: 100%;
     overflow: hidden;
+    margin-top: 250px;
   }
   
   .slides-container {
     height: 950px;
+    margin-top: -230px;
     width: 100%;
     /* transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1); */
     position: relative;
@@ -445,6 +460,7 @@ body {
   .navigation-dots {
     margin: 0px 0;
     margin-top: 50px;
+    padding-bottom: 50px;
   }
   
 

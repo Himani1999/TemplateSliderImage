@@ -73,6 +73,9 @@
         display: grid;
         grid-template-columns: auto;
     }
+    .classyads{
+  margin-left: 0px;
+}
     #button1{
         height: 30px;
     }
@@ -81,7 +84,8 @@
         width: 90%;
         margin: auto;
         /* border: 1px solid black; */
-        margin-top: 10px;
+        margin-top: 70px;
+        padding-top: 20px;
        border: none; 
         border-radius: 10px;
     }
@@ -181,8 +185,7 @@
 
 .popular{
     color: skyblue;
-    margin-top: 850px;
-    padding-top: 1650px;
+    margin-top: 2600px;
     font-weight: bold;
     font-size: 30px;
     text-align: center;

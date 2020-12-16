@@ -1,4 +1,7 @@
-
+.body{
+  margin: 0;
+  padding: 0;
+}
 .maincontainer{
   width: 100%;
 }
@@ -360,7 +363,7 @@
 
 .newicon{
   font-size:20px;
-  color:white;
+  color:skyblue;
   border-radius: 50%;
   padding: 10px 10px;
   background-color: grey;
@@ -368,6 +371,7 @@
 }
 .newicon:hover{
   background-color:red;
+  color:white;
 }
 .card2{
   position: relative;
